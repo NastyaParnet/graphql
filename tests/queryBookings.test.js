@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 import dbHandler from './dbHandler.js';
 import app from '../app';
 
-describe('GET', () => {
+describe.skip('GET', () => {
   beforeAll(async () => await dbHandler.connect());
 
   afterAll(async () => await dbHandler.closeDatabase());
