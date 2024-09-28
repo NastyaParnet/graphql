@@ -5,7 +5,7 @@ import {
   GraphQLNonNull,
 } from 'graphql';
 
-import { RealestateType } from '../realestate/type';
+import { RealestateType } from '../realestate/type.js';
 import Realestate from '../realestate/model.js';
 
 const UserType = new GraphQLObjectType({

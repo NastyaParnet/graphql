@@ -1,9 +1,12 @@
 import { GraphQLObjectType, GraphQLNonNull } from 'graphql';
+import pkg from 'graphql-iso-date';
 
-import { RealestateType } from '../realestate/type';
+import { RealestateType } from '../realestate/type.js';
 import { UserType } from '../user/type.js';
 import Realestate from '../realestate/model.js';
 import User from '../user/model.js';
+
+const { GraphQLDate } = pkg;
 
 const BookingType = new GraphQLObjectType({
   name: 'Booking',
@@ -22,8 +25,8 @@ const BookingType = new GraphQLObjectType({
         return user;
       },
     },
-    from: { type: new GraphQLNonNull(Date) },
-    to: { type: new GraphQLNonNull(Date) },
+    from: { type: new GraphQLNonNull(GraphQLDate) },
+    to: { type: new GraphQLNonNull(GraphQLDate) },
   }),
 });
 

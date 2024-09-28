@@ -1,5 +1,5 @@
-import User from './model';
-import UserQueries from './query';
-import UserMutations from './mutation';
+import User from './model.js';
+import UserQueries from './query.js';
+import UserMutations from './mutation.js';
 
 export { User, UserQueries, UserMutations };

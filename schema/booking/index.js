@@ -1,5 +1,5 @@
-import Booking from './model';
-import BookingQueries from './query';
-import BookingMutations from './mutation';
+import Booking from './model.js';
+import BookingQueries from './query.js';
+import BookingMutations from './mutation.js';
 
 export { Booking, BookingQueries, BookingMutations };
